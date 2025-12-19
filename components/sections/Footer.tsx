@@ -6,7 +6,7 @@ export default function Footer() {
   const instagramUser = 'dracamilascastilho'
 
   return (
-    <footer className='bg-background'>
+    <footer id='footer' className='bg-background scroll-mt-16'>
       <div className=' py-10 max-w-7xl mx-auto'>
         <div className='flex gap-20 justify-center'>
           <FooterItem

@@ -1,25 +1,52 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import HeaderMenuItem from './HeaderMenuItem'
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <header className='flex items-center justify-between h-16 w-full max-w-7xl px-10'>
-      <div className='flex gap-3 items-center group cursor-pointer'>
-        <Image
-          src={'/icons/logo.svg'}
-          alt='Logo principal'
-          width={45}
-          height={45}
-          className='group-hover:rotate-360 duration-500 ease-in-out'
-        />
-        <span className='text-gray-600 group-hover:translate-x-1 group-hover:text-brand duration-500 ease-in-out'>Dra. Camila Santos Castilho</span>
+    <header
+      className={`sticky top-0 z-50 w-full bg-background transition-shadow duration-300 ${
+        isScrolled ? 'shadow-md' : ''
+      }`}
+    >
+      <div className='flex items-center justify-between h-16 w-full max-w-7xl px-10 mx-auto'>
+        <a href='#hero'>
+          <div className='flex gap-3 items-center group cursor-pointer'>
+            <Image
+              src={'/icons/logo.svg'}
+              alt='Logo principal'
+              width={45}
+              height={45}
+              className='group-hover:rotate-360 duration-500 ease-in-out'
+            />
+            <span className='text-gray-600 group-hover:translate-x-1 group-hover:text-brand duration-500 ease-in-out'>
+              Dra. Camila Santos Castilho
+            </span>
+          </div>
+        </a>
+        <ul className='flex gap-10'>
+          <HeaderMenuItem text='Início' id='hero' />
+          <HeaderMenuItem text='Sobre Mim' id='about' />
+          <HeaderMenuItem text='Localização' id='location' />
+          <HeaderMenuItem text='Contato' id='footer' />
+        </ul>
       </div>
-      <ul className='flex gap-10'>
-        <HeaderMenuItem text='Início' />
-        <HeaderMenuItem text='Sobre Mim' />
-        <HeaderMenuItem text='Localização' />
-        <HeaderMenuItem text='Contato' />
-      </ul>
     </header>
   )
 }

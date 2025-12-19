@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <div className='flex px-30 justify-center'>
+    <div id='hero' className='flex px-30 justify-center scroll-mt-16'>
       <div className='max-w-4xl w-full flex justify-between  overflow-hidden items-center'>
         <div>
           <h2 className='font-semibold text-neutral-600 text-xl'>Dra. Camila Santos Castilho</h2>

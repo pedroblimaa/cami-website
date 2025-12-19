@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #e8ddee;
-  --foreground: #171717;
-  --brand: #915bae;
-  --brand-light: #a167c1;
-  --custom-pink: #B72F78;
-  --custom-pink-light: #FBEAF3;
-  --custom-pink-dark: #B72F78;
-  --custom-pink-medium: #D84597;
+  --background: hsl(279, 33%, 90%);
+  --foreground: hsl(0, 0%, 9%);
+  --brand: hsl(279, 34%, 52%);
+  --brand-light: hsl(279, 42%, 58%);
+  --custom-pink: hsl(328, 59%, 45%);
+  --custom-pink-light: hsl(328, 68%, 95%);
+  --custom-pink-dark: hsl(328, 59%, 45%);
+  --custom-pink-medium: hsl(328, 58%, 56%);
 }
 
 @theme inline {
@@ -35,4 +35,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }

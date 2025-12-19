@@ -1,6 +1,6 @@
 export default function Location() {
   return (
-    <div className='bg-gray-100 flex justify-center'>
+    <div id="location" className='bg-gray-100 flex justify-center scroll-mt-16'>
       <div className='max-w-7xl w-full py-10 flex flex-col items-center gap-10'>
         <h2 className='text-5xl font-lora text-brand'>Localização</h2>
         <div className='text-center w-full'>

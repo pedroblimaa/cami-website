@@ -7,7 +7,7 @@ export default function About() {
   const [isResumeVisible, setIsResumeVisible] = useState(false)
 
   return (
-    <div className='flex px-30 justify-center bg-custom-pink-light'>
+    <div id='about' className='flex px-30 justify-center bg-custom-pink-light scroll-mt-16'>
       <div className='max-w-7xl w-full flex flex-col gap-10 py-10'>
         <div className='flex gap-30 items-center justify-between'>
           <Image src='/images/img-about.png' height={700} width={500} alt='Sobre camila' />
