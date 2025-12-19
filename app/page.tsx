@@ -1,5 +1,6 @@
 import About from '@/components/sections/About'
 import FAQ from '@/components/sections/FAQ'
+import Footer from '@/components/sections/Footer'
 import Hero from '@/components/sections/Hero'
 import Highlights from '@/components/sections/Highlights'
 import Location from '@/components/sections/Location'
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <Location />
         <FAQ />
+        <Footer />
       </div>
     </div>
   )

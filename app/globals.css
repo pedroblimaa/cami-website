@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: hsl(280, 33%, 90%);
+  --background: #e8ddee;
   --foreground: #171717;
-  --brand: hsl(279, 34%, 52%);
-  --brand-light: hsl(279, 42%, 58%);
+  --brand: #915bae;
+  --brand-light: #a167c1;
   --custom-pink: #B72F78;
   --custom-pink-light: #FBEAF3;
   --custom-pink-dark: #B72F78;
