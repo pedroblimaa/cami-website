@@ -12,7 +12,7 @@ export default function Header() {
           height={45}
           className='group-hover:rotate-360 duration-500 ease-in-out'
         />
-        <span className='group-hover:translate-x-1 group-hover:text-brand duration-500 ease-in-out '>Dra. Camila Santos Castilho</span>
+        <span className='text-gray-600 group-hover:translate-x-1 group-hover:text-brand duration-500 ease-in-out'>Dra. Camila Santos Castilho</span>
       </div>
       <ul className='flex gap-10'>
         <HeaderMenuItem text='Início' />

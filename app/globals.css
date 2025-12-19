@@ -5,6 +5,10 @@
   --foreground: #171717;
   --brand: hsl(279, 34%, 52%);
   --brand-light: hsl(279, 42%, 58%);
+  --custom-pink: #B72F78;
+  --custom-pink-light: #FBEAF3;
+  --custom-pink-dark: #B72F78;
+  --custom-pink-medium: #D84597;
 }
 
 @theme inline {
@@ -14,6 +18,10 @@
   --font-lora: var(--font-lora);
   --color-brand: var(--brand);
   --color-brand-light: var(--brand-light);
+  --color-custom-pink: var(--custom-pink);
+  --color-custom-pink-light: var(--custom-pink-light);
+  --color-custom-pink-dark: var(--custom-pink-dark);
+  --color-custom-pink-medium: var(--custom-pink-medium);
 }
 
 @media (prefers-color-scheme: light) {

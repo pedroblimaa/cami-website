@@ -6,7 +6,7 @@ export default function HeaderMenuItem({ text }: HeaderMenuItemProps) {
   return (
     <li>
       <button
-        className='cursor-pointer bg-linear-to-r from-brand to-brand bg-no-repeat bg-bottom
+        className=' text-gray-600 cursor-pointer bg-linear-to-r from-brand to-brand bg-no-repeat bg-bottom
             bg-size-[0%_2px] hover:bg-size-[100%_2px] transition-all ease-in-out duration-300'
       >
         {text}

@@ -3,9 +3,9 @@ import Image from 'next/image'
 export default function Hero() {
   return (
     <div className='flex px-30 justify-center'>
-      <div className='max-w-4xl w-full  flex h-[600px] justify-between  overflow-hidden items-center'>
+      <div className='max-w-4xl w-full flex justify-between  overflow-hidden items-center'>
         <div>
-          <h2 className='font-semibold text-gray-500 text-xl'>Dra. Camila Santos Castilho</h2>
+          <h2 className='font-semibold text-neutral-600 text-xl'>Dra. Camila Santos Castilho</h2>
           <h1 className='text-4xl font-lora text-brand font-semibold'>Médica generalista</h1>
           <a href='https://paciente.amorsaude.com.br/amorsaude' target='_blank' rel='noopener noreferrer'>
             <button
