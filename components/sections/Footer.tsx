@@ -11,7 +11,7 @@ export default function Footer() {
         <div className='flex gap-20 justify-center'>
           <FooterItem
             Icon={FaInstagram}
-            iconSize={50}
+            iconSize={52}
             padding='3'
             upperText='Me siga no instagram'
             lowerText={`@dracamilascastilho/${instagramUser}`}
