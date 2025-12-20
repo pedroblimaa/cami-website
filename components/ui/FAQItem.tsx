@@ -19,12 +19,12 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
         <FaChevronRight
           className={`inline mr-2 text-gray-600 transition-transform duration-300 ${isClicked && 'rotate-90'}`}
         />
-        <p className='font-semibold'>{question}</p>
+        <p className='font-semibold text-left'>{question}</p>
       </div>
 
       <div
         className={`overflow-hidden transition-all ease-in-out text-left
-             ${isClicked ? `max-h-20 pb-2 duration-300` : 'max-h-0 opacity-10 duration-200'}`}
+             ${isClicked ? `max-h-60 sm:max-h-40 md:max-h-30 pb-2 duration-300` : 'max-h-0 opacity-10 duration-300'}`}
       >
         <p className='flex ml-10'>{answer}</p>
       </div>

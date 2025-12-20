@@ -1,12 +1,11 @@
-import { FaChevronRight } from 'react-icons/fa'
 import FAQItem from '../ui/FAQItem'
 
 export default function FAQ() {
   return (
-    <div id='faq' className='bg-gray-200 flex justify-center text-lg'>
-      <div className='max-w-7xl w-full py-10 flex flex-col items-center gap-10'>
-        <h2 className='text-5xl font-lora text-brand'>Dúvidas Frequentes</h2>
-        <ul className='text-center w-full rounded-4xl border-gray-500 border-2 overflow-hidden'>
+    <div id='faq' className='bg-gray-200 flex justify-center text-base sm:text-lg'>
+      <div className='max-w-7xl w-full py-10 px-4 flex flex-col items-center gap-6'>
+        <h2 className='text-3xl sm:text-4xl md:text-5xl font-lora text-brand text-center'>Dúvidas Frequentes</h2>
+        <ul className='text-center w-full max-w-3xl rounded-4xl border-gray-500 border-2 overflow-hidden'>
           <FAQItem
             question='Quais tipos de atendimentos você realiza e quais condições você acompanha?'
             answer='Atendo na área clínica, avaliando condições agudas (como dores, sintomas respiratórios, tonturas,

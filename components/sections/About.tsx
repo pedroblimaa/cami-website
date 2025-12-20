@@ -7,15 +7,15 @@ export default function About() {
   const [isResumeVisible, setIsResumeVisible] = useState(false)
 
   return (
-    <div id='about' className='flex px-30 justify-center bg-custom-pink-light scroll-mt-16'>
-      <div className='max-w-7xl w-full flex flex-col gap-10 py-10'>
-        <div className='flex gap-30 items-center justify-between'>
-          <Image src='/images/img-about.png' height={700} width={500} alt='Sobre camila' />
-          <div className='flex flex-col gap-10'>
-            <h2 className='font-lora text-4xl text-custom-pink-dark font-medium'>
+    <div id='about' className='flex px-4 sm:px-6 md:px-10 lg:px-30 justify-center bg-custom-pink-light scroll-mt-16'>
+      <div className='max-w-7xl w-full flex flex-col gap-8 py-10'>
+        <div className='flex flex-col md:flex-row gap-8 items-center justify-between'>
+          <Image src='/images/img-about.png' height={300} width={300} alt='Sobre camila' className='w-full md:w-auto max-w-[300px]' />
+          <div className='flex flex-col gap-6 flex-1 w-full'>
+            <h2 className='font-lora text-2xl sm:text-3xl md:text-4xl text-custom-pink-dark font-medium text-center md:text-left'>
               Olá! Eu sou Camila Santos Castilho!
             </h2>
-            <div className='flex flex-col gap-5 text-xl'>
+            <div className='flex flex-col gap-4 text-base sm:text-lg'>
               <p>
                 Sou médica formada pela Faculdade de Medicina de Itajubá. Atendo na área clínica, sempre com foco no
                 lado humano da medicina: aquele que envolve ouvir com calma, acolher, conversar e realmente entender o
@@ -34,23 +34,23 @@ export default function About() {
         </div>
         <div>
           <div
-            className='flex gap-4 bg-custom-pink-medium rounded-t-3xl px-8 py-3 text-custom-pink-light items-center cursor-pointer'
+            className='flex gap-4 bg-custom-pink-medium rounded-t-3xl px-6 py-1 sm:py-2 md:py-3 text-custom-pink-light items-center cursor-pointer'
             onClick={() => setIsResumeVisible(!isResumeVisible)}
           >
             <BsFillTriangleFill
-              size={24}
+              size={20}
               className={`transform transition-transform duration-300 ${isResumeVisible ? 'rotate-0' : 'rotate-180'}`}
             />
-            <p className='text-xl text-center'> Meu curriculo</p>
+            <p className='text-lg text-center'> Meu curriculo</p>
           </div>
 
           <div className={`w-full relative overflow-hidden duration-300 ${isResumeVisible ? 'max-h-1000' : 'max-h-0'}`}>
             <Image
               src='/images/Resume.jpg'
               alt='Resume'
-              width={1920}
-              height={1080}
-              className={`duration-300 ease-in-out ${!isResumeVisible && '-translate-y-full'}`}
+              width={500}
+              height={700}
+              className={`w-full h-auto object-contain duration-300 ease-in-out ${!isResumeVisible && '-translate-y-full'}`}
             />
           </div>
         </div>
