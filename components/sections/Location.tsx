@@ -3,7 +3,7 @@ export default function Location() {
     <div id="location" className='bg-gray-100 flex justify-center scroll-mt-16'>
       <div className='max-w-7xl w-full py-10 px-4 flex flex-col items-center gap-6'>
         <h2 className='text-3xl sm:text-4xl md:text-5xl font-lora text-brand'>Localização</h2>
-        <div className='text-center w-full max-w-2xl'>
+        <div className='text-center w-full max-w-2xl md:max-w-6xl'>
           <p className='text-xl sm:text-2xl text-neutral-600'>Amor saúde - Três Corações</p>
           <div className='w-full aspect-video mt-4'>
             <iframe

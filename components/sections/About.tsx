@@ -9,13 +9,13 @@ export default function About() {
   return (
     <div id='about' className='flex px-4 sm:px-6 md:px-10 lg:px-30 justify-center bg-custom-pink-light scroll-mt-16'>
       <div className='max-w-7xl w-full flex flex-col gap-8 py-10'>
-        <div className='flex flex-col md:flex-row gap-8 items-center justify-between'>
-          <Image src='/images/img-about.png' height={300} width={300} alt='Sobre camila' className='w-full md:w-auto max-w-[300px]' />
+        <div className='flex flex-col xl:flex-row gap-8 md:gap-24 items-center justify-between'>
+          <Image src='/images/img-about.png' height={1200} width={1200} alt='Sobre camila' className='w-full max-w-[300px] md:max-w-[460px]' />
           <div className='flex flex-col gap-6 flex-1 w-full'>
             <h2 className='font-lora text-2xl sm:text-3xl md:text-4xl text-custom-pink-dark font-medium text-center md:text-left'>
               Olá! Eu sou Camila Santos Castilho!
             </h2>
-            <div className='flex flex-col gap-4 text-base sm:text-lg'>
+            <div className='flex flex-col gap-4 text-base sm:text-lg md:text-xl'>
               <p>
                 Sou médica formada pela Faculdade de Medicina de Itajubá. Atendo na área clínica, sempre com foco no
                 lado humano da medicina: aquele que envolve ouvir com calma, acolher, conversar e realmente entender o

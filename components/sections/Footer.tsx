@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer id='footer' className='bg-background scroll-mt-16'>
       <div className='py-8 px-4 max-w-7xl mx-auto flex flex-col justify-center items-center'>
-        <div className='flex flex-col lg:flex-row gap-8 justify-center items-start lg:items-center'>
+        <div className='flex flex-col lg:flex-row gap-8 lg:gap-20 justify-center items-start lg:items-center'>
           <FooterItem
             Icon={FaInstagram}
             upperText='Me siga no instagram'
