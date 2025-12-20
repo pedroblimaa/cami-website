@@ -48,8 +48,8 @@ export default function About() {
             <Image
               src='/images/Resume.jpg'
               alt='Resume'
-              width={500}
-              height={700}
+              width={1920}
+              height={1080}
               className={`w-full h-auto object-contain duration-300 ease-in-out ${!isResumeVisible && '-translate-y-full'}`}
             />
           </div>
