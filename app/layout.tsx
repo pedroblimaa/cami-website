@@ -27,9 +27,10 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Dra. Camila Santos Castilho - Médica Generalista',
     description: 'Consultas médicas de qualidade com Dra. Camila Santos Castilho, médica generalista especializada em cuidados abrangentes e humanizados.',
+    url: 'https://www.dracamilascastilho.com.br',
     images: [
       {
-        url: '/icons/logo.svg',
+        url: 'https://www.dracamilascastilho.com.br/icons/logo_512x512.png',
         width: 512,
         height: 512,
         alt: 'Dra. Camila Santos Castilho - Logo',
