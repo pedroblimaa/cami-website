@@ -13,10 +13,24 @@ const lora = Lora({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.dracamilascastilho.com.br'),
   title: 'Dra. Camila Santos Castilho - Médica Generalista',
   description: 'Consultas médicas de qualidade com Dra. Camila Santos Castilho, médica generalista especializada em cuidados abrangentes e humanizados.',
   icons: {
     icon: '/icons/logo.svg',
+  },
+  openGraph: {
+    type: 'website',
+    title: 'Dra. Camila Santos Castilho - Médica Generalista',
+    description: 'Consultas médicas de qualidade com Dra. Camila Santos Castilho, médica generalista especializada em cuidados abrangentes e humanizados.',
+    images: [
+      {
+        url: '/icons/logo.svg',
+        width: 512,
+        height: 512,
+        alt: 'Dra. Camila Santos Castilho - Logo',
+      },
+    ],
   },
 }
 
